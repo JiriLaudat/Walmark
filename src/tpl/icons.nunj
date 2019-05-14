@@ -13,10 +13,10 @@
 
     <h1>SVG icons</h1>
     {# Icon from detault sprite (svg/sprites/icons) #}
-    {{ svg("stadium", "icon-blue") }}
-    {{ svg("marker", "icon-purple") }}
+    {{ svg("site-logo", "icon-blue") }}
+    {{ svg("icon-roundangle", "icon-purple") }}
 
     {# Icon from custom sprite #}
-    {{ svg(sprite = "demo", "baby", "icon-maroon") }}
+    {{ svg(sprite = "media", "icon-file", "icon-maroon") }}
 
 {% endblock %}

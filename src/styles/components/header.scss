@@ -1,5 +1,11 @@
-.header-logo {
+.header {
 
+  &__icon {
+    @include size(rem(20));
+  }
+}
+
+.header-logo {
   &__symbol-svg {
     @include size(rem(41));
   }
@@ -10,15 +16,33 @@
   }
 }
 
-.header-menu {
-
+.menu-user {
   &__user-icon {
     @include size(rem(20));
   }
 
-  &__user .list-inline-item:not(:last-child):after {
+  .list-inline-item:not(:last-child):after {
     padding: 0 rem(5);
     content: "|";
 
+  }
+}
+
+
+.menu-wishlist {
+  &__icon-wishlist {
+    fill: map-get($theme-colors, secondary-dark);
+  }
+
+  &__questionmark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: color(border-color);
+    border-radius: 50%;
+    @include size(rem(20));
+  }
+  &__icon-questionmark {
+    @include size(rem(12));
   }
 }

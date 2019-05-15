@@ -1,7 +1,10 @@
 {% from "../../helpers/svg.nunj" import svg %}
 
-<h1>This is header</h1>
+<div class="header">
+  {% include "./header-logo.nunj" %}
+  {% include "./menu-user.nunj" %}
+  {% include "./menu-wishlist.nunj" %}
+</div>
 
-{% include "./header-logo.nunj" %}
-{% include "./menu-user.nunj" %}
+
 

@@ -5,21 +5,27 @@ $purple:  #6f42c1;
 $pink:    #e83e8c;
 $red:     #dc3545;
 $orange:  #ff6b03;
+$orange-dark: #ff6900;
 $yellow:  #ffc107;
 $green:   #28a745;
 $teal:    #20c997;
 $cyan:    #17a2b8;
+$grey-dark: #d7d7d7;
 
 $theme-colors: (
   primary: $teal,
   secondary: $orange,
+  secondary-dark: $orange-dark,
   success: $green,
   info: $cyan,
   warning: $yellow,
-  danger: $red
+  danger: $red,
+  border-color: $grey-dark
 );
 
 $link-hover-decoration: none;
+$link-color: #000;
+$link-hover-decoration: inherit;
 
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';

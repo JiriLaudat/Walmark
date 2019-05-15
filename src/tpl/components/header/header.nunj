@@ -3,4 +3,5 @@
 <h1>This is header</h1>
 
 {% include "./header-logo.nunj" %}
+{% include "./menu-user.nunj" %}
 

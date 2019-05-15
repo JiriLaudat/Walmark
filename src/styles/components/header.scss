@@ -9,3 +9,16 @@
     height: rem(29);
   }
 }
+
+.header-menu {
+
+  &__user-icon {
+    @include size(rem(20));
+  }
+
+  &__user .list-inline-item:not(:last-child):after {
+    padding: 0 rem(5);
+    content: "|";
+
+  }
+}

@@ -1,8 +1,8 @@
-<div class="header-logo d-flex align-items-center align-items-md-start py-2 mr-3">
+<a href="#" class="header-logo d-flex align-items-center align-items-md-start py-2 mr-3">
   {{ svg('site-logo', 'header-logo__symbol-svg mr-2') }}
   <div class="d-none d-sm-block">
     {{ svg('site-logo-text', 'header-logo__text-svg') }}
-    <small class="d-none d-md-block font-weight-bold text-secondary">Your biggest supporter</small>
+    <div class="d-none d-md-block font-weight-bold text-secondary text-12">Your biggest supporter</div>
   </div>
-</div>
+</a>
 

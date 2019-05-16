@@ -1,9 +1,9 @@
-{% from "../../helpers/svg.nunj" import svg %}
+{% from "helpers/svg.nunj" import svg %}
 
 <nav class="menu-main navbar  navbar-expand-lg p-0 pl-3">
   <div class="d-xl-none">
     <a class="d-flex align-items-center" href="#">
-        <span class="mr-3">MENU</span>
+        <span class="mr-3 text-14 text-sm-20">MENU</span>
        {{ svg(sprite = "global", "icon-hamburger-menu", "menu-main__toggler") }}
     </a>
   </div>
@@ -29,7 +29,7 @@
         <a href="#" class="nav-link">Ambasador</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link btn btn-primary ">Health index</a>
+        <a href="#" class="nav-link btn btn-primary">Health index</a>
       </li>
     </ul>
   </div>

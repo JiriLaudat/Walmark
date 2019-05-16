@@ -1,0 +1,28 @@
+.text-sm {
+  font-size: rem(10) !important;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-8         { font-size: rem(8) !important; }
+    .text#{$infix}-9       { font-size: rem(9) !important; }
+    .text#{$infix}-10 { font-size: rem(10) !important; }
+    .text#{$infix}-11        { font-size: rem(11) !important; }
+    .text#{$infix}-12        { font-size: rem(12) !important; }
+    .text#{$infix}-13    { font-size: rem(13) !important; }
+    .text#{$infix}-14   { font-size: rem(14) !important; }
+    .text#{$infix}-15         { font-size: rem(15) !important; }
+    .text#{$infix}-16  { font-size: rem(15) !important; }
+    .text#{$infix}-17         { font-size: rem(16) !important; }
+    .text#{$infix}-18       { font-size: rem(17) !important; }
+    .text#{$infix}-19 { font-size: rem(18) !important; }
+    .text#{$infix}-20        { font-size: rem(19) !important; }
+    .text#{$infix}-21        { font-size: rem(20) !important; }
+    .text#{$infix}-22    { font-size: rem(21) !important; }
+    .text#{$infix}-30   { font-size: rem(22) !important; }
+    .text#{$infix}-31         { font-size: rem(23) !important; }
+    .text#{$infix}-32  { font-size: rem(24) !important; }
+  }
+}

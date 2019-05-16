@@ -1,4 +1,4 @@
-<div class="header-logo d-flex align-items-center align-items-md-start">
+<div class="header-logo d-flex align-items-center align-items-md-start py-2 mr-3">
   {{ svg('site-logo', 'header-logo__symbol-svg mr-2') }}
   <div class="d-none d-sm-block">
     {{ svg('site-logo-text', 'header-logo__text-svg') }}

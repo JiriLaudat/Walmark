@@ -7,24 +7,34 @@ $red:     #dc3545;
 $orange:  #ff6b03;
 $orange-dark: #ff6900;
 $yellow:  #ffc107;
-$green:   #28a745;
+$green:   #048e3c;
 $teal:    #20c997;
 $cyan:    #17a2b8;
 $grey-dark: #d7d7d7;
+$black:    #000;
 
 $theme-colors: (
-  primary: $teal,
+  primary: $green,
   secondary: $orange,
   secondary-dark: $orange-dark,
-  success: $green,
+  success: $teal,
   info: $cyan,
   warning: $yellow,
   danger: $red,
-  border-color: $grey-dark
+  border-color: $grey-dark,
+  text-color: $black
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
 );
 
 $link-hover-decoration: none;
-$link-color: #000;
+$link-color: $black;
 $link-hover-decoration: inherit;
 
 @import '../../node_modules/bootstrap/scss/functions';

@@ -10,7 +10,7 @@
       <a href="#" class="d-flex justify-content-center align-items-center">
         <span class="">Wish list is empty</span>
         <div class="menu-wishlist__questionmark ml-1">
-          {{ svg(sprite = "global", "icon-questionmark", "header__icon menu-wishlist__icon-questionmark") }}
+          {{ svg(sprite = "global", "icon-questionmark", "menu-wishlist__icon-questionmark") }}
         </div>
       </a>
     </li>

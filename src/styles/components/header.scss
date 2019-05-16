@@ -1,7 +1,44 @@
 .header {
+  box-shadow: 0 3px 5px color(border-color);
+
+  &__menu-top {
+    & > *:not(:last-child) {
+      @include media-breakpoint-down(lg) {
+        margin-right: rem(15);
+      }
+
+      // add vertical lines between menu items
+      @include media-breakpoint-only(xl) {
+        &::after {
+          width: rem(2);
+          height: rem(20);
+          margin: 0 rem(15);
+          background-color: color(border-color);
+          content: "";
+        }
+      }
+    }
+  }
 
   &__icon {
     @include size(rem(20));
+
+    fill: color(secondary-dark);
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: rem(5);
+    border: 2px solid color(secondary);
+    border-radius: 50%;
+  }
+
+  &__icon-search {
+    fill: color(text-color);
+
+    @include size(rem(15));
   }
 }
 
@@ -17,22 +54,21 @@
 }
 
 .menu-user {
+  @include media-breakpoint-down(md) {
+    font-size: rem(14);
+  }
+
   &__user-icon {
     @include size(rem(20));
   }
 
-  .list-inline-item:not(:last-child):after {
+  .list-inline-item:not(:last-child)::after {
     padding: 0 rem(5);
     content: "|";
-
   }
 }
 
-
 .menu-wishlist {
-  &__icon-wishlist {
-    fill: map-get($theme-colors, secondary-dark);
-  }
 
   &__questionmark {
     display: flex;
@@ -40,9 +76,17 @@
     justify-content: center;
     background-color: color(border-color);
     border-radius: 50%;
+
     @include size(rem(20));
   }
+
   &__icon-questionmark {
     @include size(rem(12));
+  }
+}
+
+.menu-main {
+  &__toggler {
+    @include size(rem(40));
   }
 }

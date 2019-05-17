@@ -4,20 +4,38 @@ $indigo:  #6610f2;
 $purple:  #6f42c1;
 $pink:    #e83e8c;
 $red:     #dc3545;
-$orange:  #fd7e14;
+$orange:  #ff6b03;
+$orange-dark: #ff6900;
 $yellow:  #ffc107;
-$green:   #28a745;
+$green:   #048e3c;
 $teal:    #20c997;
 $cyan:    #17a2b8;
+$grey-dark: #d7d7d7;
+$black:    #000;
 
 $theme-colors: (
-  primary: $teal,
-  secondary: $pink,
-  success: $green,
+  primary: $green,
+  secondary: $orange,
+  secondary-dark: $orange-dark,
+  success: $teal,
   info: $cyan,
   warning: $yellow,
-  danger: $red
+  danger: $red,
+  border-color: $grey-dark,
+  text-color: $black
 );
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+$link-hover-decoration: none;
+$link-color: $black;
+$link-hover-decoration: inherit;
 
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';

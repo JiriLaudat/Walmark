@@ -1,0 +1,53 @@
+.header {
+  box-shadow: 0 3px 5px color(border-color);
+
+  &__menu-top {
+    & > *:not(:last-child) {
+      @include media-breakpoint-down(lg) {
+        margin-right: rem(15);
+      }
+
+      // add vertical lines between menu items
+      @include media-breakpoint-only(xl) {
+        &::after {
+          @include size(rem(2), rem(20));
+
+          margin: 0 rem(15);
+          background-color: color(border-color);
+          content: "";
+        }
+      }
+    }
+  }
+
+  &__icon {
+    @include size(rem(15));
+
+    fill: color(secondary-dark);
+
+    @include media-breakpoint-up(sm) {
+      @include size(rem(20));
+    }
+  }
+
+  &__search {
+    padding: rem(4);
+    border: 2px solid color(secondary);
+    border-radius: 50%;
+
+    @include media-breakpoint-up(sm) {
+      padding: rem(5);
+      border: 1px solid color(secondary);
+    }
+  }
+
+  &__icon-search {
+    fill: color(text-color);
+
+    @include size(rem(10));
+
+    @include media-breakpoint-up(sm) {
+      @include size(rem(15));
+    }
+  }
+}

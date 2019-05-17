@@ -1,0 +1,9 @@
+.header-logo {
+  &__symbol-svg {
+    @include size(rem(41));
+  }
+
+  &__text-svg {
+    @include size(rem(176), rem(29));
+  }
+}

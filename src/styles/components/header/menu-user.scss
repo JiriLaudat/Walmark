@@ -1,0 +1,10 @@
+.menu-user {
+  &__user-icon {
+    fill: color(text-color);
+  }
+
+  .list-inline-item:not(:last-child)::after {
+    padding: 0 rem(5);
+    content: "|";
+  }
+}

@@ -1,0 +1,14 @@
+{% from "helpers/svg.nunj" import svg %}
+<div class="menu-user d-flex align-items-center text-14 text-lg-16">
+  <a href="#" class="d-flex align-items-center">
+    {{ svg(sprite = "global", "icon-user", "header__icon menu-user__user-icon") }}
+  </a>
+  <ul class="list-inline m-0 ml-3 d-none d-md-block">
+    <li class="list-inline-item m-0">
+      <a href="#" class="text-secondary">Jana Novakova</a>
+    </li>
+    <li class="list-inline-item m-0">
+      <a href="#" class="text-secondary">Log out</a>
+    </li>
+  </ul>
+</div>

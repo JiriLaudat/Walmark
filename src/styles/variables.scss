@@ -10,7 +10,9 @@ $yellow:  #ffc107;
 $green:   #048e3c;
 $teal:    #20c997;
 $cyan:    #17a2b8;
-$grey-dark: #d7d7d7;
+$grey-light: #f6f6f6;
+$grey: #ededed;
+$grey-dark: #7d7d7d;
 $black:    #000;
 
 $theme-colors: (
@@ -21,8 +23,10 @@ $theme-colors: (
   info: $cyan,
   warning: $yellow,
   danger: $red,
-  border-color: $grey-dark,
-  text-color: $black
+  border-color: $grey,
+  input-border-color: $grey-dark,
+  text-color: $black,
+  dark-bg-color: $grey-light
 );
 
 $grid-breakpoints: (
@@ -33,9 +37,28 @@ $grid-breakpoints: (
   xl: 1200px
 );
 
+$grid-gutter-width: rem(20);
+
+// Headings
+$h3-font-size: rem(22);
+$headings-margin-bottom: rem(24);
+
+// Links
 $link-hover-decoration: none;
 $link-color: $black;
 $link-hover-decoration: inherit;
+
+// Borders
+$border-radius: rem(8);
+
+// Cards
+$card-border-width: rem(4);
+$card-border-color: map-get($theme-colors, border-color);
+
+// Inputs
+$input-btn-border-width: rem(2);
+$input-border-color: map-get($theme-colors, input-border-color);
+$input-box-shadow: none;
 
 @import '../../node_modules/bootstrap/scss/functions';
 @import '../../node_modules/bootstrap/scss/variables';

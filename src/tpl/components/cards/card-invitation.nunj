@@ -1,0 +1,25 @@
+<div class="card  bg-dark-bg-color ">
+  <div class="card-body">
+    <h3 class="font-weight-bold">Invite your friends</h3>
+
+    <form>
+      <div class="row d-none d-sm-flex">
+        <div class="col-7">
+          <input type="email" class="form-control">
+        </div>
+        <div class="col-5">
+          <button href="#" class="btn btn-primary btn-block">Invite</a>
+        </div>
+      </div>
+    </form>
+
+    <form>
+      <div class="input-group d-sm-none">
+        <input type="email" class="form-control">
+        <div class="input-group-append">
+          <button class="btn btn-primary" type="button">Invite</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
